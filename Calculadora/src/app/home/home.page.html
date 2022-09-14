@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div align="center">
+    <ion-input clearInput="true" type="number" [(ngModel)]="numeros"></ion-input>
+    <ion-button (click) = "setLista()">OK</ion-button>
+</div>
+<br><br>
+
+
+  <div align="center">
+    <ion-button (click) = "numero('0')">0</ion-button>
+    <ion-button (click) = "numero('1')">1</ion-button>
+    <ion-button (click) = "numero('2')">2</ion-button>
+    <ion-button (click) = "numero('3')">3</ion-button>
+  </div>
+
+  <div align="center">
+    <ion-button (click) = "numero('4')">4</ion-button>
+    <ion-button (click) = "numero('5')">5</ion-button>
+    <ion-button (click) = "numero('6')">6</ion-button>
+    <ion-button (click) = "numero('7')">7</ion-button>
+  </div>
+
+  <div align="center">
+    <ion-button (click) = "numero('8')">8</ion-button>
+    <ion-button (click) = "numero('9')">9</ion-button>
+    <ion-button (click) = "numero('.')">.</ion-button>
+    <ion-button (click) = "limparce()">CE</ion-button>
+    <ion-button (click) = "limpar()">C</ion-button>
+  </div>
+
+  <div align="center">
+    <ion-button (click) = "getCalcMaior()">MAIOR</ion-button>
+    <ion-button (click) = "getOrdemC()">ORDEM CRESC</ion-button>
+  </div>
+  <div align="center">
+    <ion-input clearInput="true" [(ngModel)]="lista"></ion-input>
+
+</div>
+{{grupo[0]}}
+{{grupo[1]}}
+{{grupo[2]}}
