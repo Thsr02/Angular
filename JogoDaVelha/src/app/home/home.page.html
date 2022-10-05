@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Jogo da Velha
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Jogo da Velha</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div align="center">
+    <input type="text" name="" id=""placeholder ="JOGADOR 1">
+    <input type="text" name="" id=""placeholder ="JOGADOR 2">
+    <p><input type="submit" value="SALVAR JOGADOR">
+  </div>
+  <div align="center">
+        <ion-button #button1 (click) = "jogar(button1, 0,0)" ></ion-button>
+      <ion-button #button2 (click) = "jogar(button2, 0,1)" ></ion-button>
+      <ion-button #button3 (click) = "jogar(button3, 0,2)" ></ion-button>
+  </div>
+  <div align="center">
+      <ion-button #button4 (click) = "jogar(button4, 1,0)" ></ion-button>
+      <ion-button #button5 (click) = "jogar(button5, 1,1)" ></ion-button>
+      <ion-button #button6 (click) = "jogar(button6, 1,2)" ></ion-button>
+  </div>
+  <div align="center">
+      <ion-button #button7 (click) = "jogar(button7, 2,0)" ></ion-button>
+      <ion-button #button8 (click) = "jogar(button8, 2,1)" ></ion-button>
+      <ion-button #button9 (click) = "jogar(button9, 2,2)" ></ion-button>
+  </div>
+  {{this.sequencia[0][0]}}
+</ion-content>
