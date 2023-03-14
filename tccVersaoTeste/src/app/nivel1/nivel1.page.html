@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-button [routerLink]="['/home']">
+        <ion-icon size="large" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+      <div class="bloqueioDeClick"></div>
+      <ion-label>Nv. 1</ion-label>
+        <ion-range value="{{p}}"></ion-range>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <input type="text" type="checkbox" id="flip" />
+  <div class="principal">
+    <div class="bloqueioDeClick2"></div>
+    <label class="carta" for="flip">
+      <div class="animateanimated animatezoomIn frente">
+        <h1>{{ front }}</h1>
+      </div>
+      <div class="verso">
+        <h2>{{ back }}</h2>
+      </div>
+    </label>
+  </div>
+
+  <div class="ion-padding monitor">
+    <div class="r">
+      <p>{{ resposta }}</p>
+    </div>
+  </div>
+
+  <div class="teclado">
+    <div class="animateanimated animatezoomIn tabela">
+      <ion-grid>
+        <ion-col>
+          <ion-row>
+            <ion-button (click)="responder('あ')">A</ion-button>
+          </ion-row>
+          <ion-row>
+            <ion-button (click)="responder('い')">I</ion-button>
+          </ion-row>
+        </ion-col>
+      </ion-grid>
+    </div>
+  </div>
+
+</ion-content>
